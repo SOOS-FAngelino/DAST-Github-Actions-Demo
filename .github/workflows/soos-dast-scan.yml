@@ -23,7 +23,7 @@ name: "SOOS DAST Scan"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "test", "soos/test-new_branch" ]
   pull_request:
     branches: [ "main" ]
 
