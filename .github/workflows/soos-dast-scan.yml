@@ -41,6 +41,7 @@ jobs:
           target_url: "https://brokencrystals.com/"
           output_format: "sarif"
           api_url: "https://qa-api.soos.io/api/"
+          branch_name: "test"
       - name: Upload SOOS DAST SARIF Report
         uses: github/codeql-action/upload-sarif@v3
         with:
