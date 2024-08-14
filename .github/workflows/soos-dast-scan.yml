@@ -40,7 +40,7 @@ jobs:
           scan_mode: "baseline"
           target_url: "https://brokencrystals.com/"
           output_format: "sarif"
-          api_url: "https://qa-api.soos.io/api/"
+          #api_url: "https://qa-api.soos.io/api/"
       - name: Upload SOOS DAST SARIF Report
         uses: github/codeql-action/upload-sarif@v3
         with:
@@ -54,6 +54,6 @@ jobs:
       uses: soos-io/soos-sca-github-action@v2 # Get Latest Version from https://github.com/marketplace/actions/soos-core-sca
       with:
         project_name: "DAST+SCA Prod Test"
-        api_url: "https://qa-api.soos.io/api/"
+        #api_url: "https://qa-api.soos.io/api/"
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
