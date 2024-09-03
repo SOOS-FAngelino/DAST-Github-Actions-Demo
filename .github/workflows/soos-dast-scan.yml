@@ -43,6 +43,7 @@ jobs:
           project_name: "DAST Smoke test"
           scan_mode: "baseline"
           target_url: "https://brokencrystals.com/"
+          api_url: "https://qa-api.soos.io/api/"
           image_tag: alpha
           output_format: "sarif"
       - name: Upload SOOS DAST SARIF Report
