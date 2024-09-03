@@ -36,18 +36,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run SOOS DAST Analysis
-        uses: soos-io/soos-dast-github-action@8a16fca3bc847f3c41ddbb365625fc7c83cfa777
+        uses: soos-io/soos-dast-github-action@v2
         with:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
           project_name: "DAST Smoke test"
-          api_url: "https://qa-api.soos.io/api/"
+          #api_url: "https://qa-api.soos.io/api/"
           scan_mode: "apiscan"
           api_scan_format: "openapi"
           target_url: "https://demoqa.com/"
           verbose: "true"
           debug: "true"
-          image_tag: alpha
+          #image_tag: alpha
           output_format: "sarif"
       - name: Upload SOOS DAST SARIF Report
         uses: github/codeql-action/upload-sarif@v3
