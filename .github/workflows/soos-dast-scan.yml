@@ -17,3 +17,4 @@ jobs:
           target_url: "https://brokencrystals.com/"
           api_url: "https://qa-api.soos.io/api/"
           image_tag: alpha
+          verbose: true
