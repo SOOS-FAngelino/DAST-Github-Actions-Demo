@@ -18,3 +18,4 @@ jobs:
           api_url: "https://qa-api.soos.io/api/"
           image_tag: alpha
           verbose: true
+          invalidParameter: "invalid"
