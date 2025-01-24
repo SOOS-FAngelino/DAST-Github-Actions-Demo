@@ -40,7 +40,7 @@ jobs:
         with:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          project_name: "<DAST Github starter action"
+          project_name: "DAST Github starter action"
           scan_mode: "baseline"
           target_url: "https://brokencrystals.com/"
           api_url: "https://qa-api.soos.io/api/"
