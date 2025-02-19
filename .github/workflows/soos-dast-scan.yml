@@ -46,6 +46,9 @@ jobs:
           api_url: "https://qa-api.soos.io/api/"
           export_format: "Sarif"
           export_file_type: "Json"
+          other_options: "-d"
+          image_tag: beta          
+          
       - name: Find and rename SARIF file since it is unique
         run: |
           file=$(find . -name "*.sarif.json" | head -n 1)
