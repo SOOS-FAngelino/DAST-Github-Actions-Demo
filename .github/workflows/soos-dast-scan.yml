@@ -50,8 +50,9 @@ jobs:
            auth_login_url: "https://demoqa.com/login"
            auth_verification_url: "https://demoqa.com/Account/v1/User/52d9d238-fc85-4f1e-9ce2-50a65397ed29"
            log_level: "DEBUG"
-           debug: "true"     
-          
+           debug: "true" 
+           export_format: "Sarif"
+           export_file_type: "Json"
       - name: Find and rename SARIF file since it is unique
         run: |
           file=$(find . -name "*.sarif.json" | head -n 1)
